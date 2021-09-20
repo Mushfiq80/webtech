@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Donor Registration</title>
+        <link rel="stylesheet" href="C:\xampp\htdocs\Lab Tasks\Lab Task 1\index.css">
+    </head>
+    <body>
+        <p>
+            <h6><span style="color:red;">*</span>- Denotes Required Information</h6>
+            <h5>>1 Donation >2 Confirmation  > Thank You </h5>
+            <h3 style="color: red;">Donor Information</h3>
+            <form>
+                <label for="fname"><strong>First Name</strong></label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lname" >
+                <br>
+                <label for="cname">Company</label>
+                <input type="text" id="Cname" name="Cname" >
+                <br>
+                <label for="Ad1">Address 1</label>
+                <input type="text" id="Ad1" name="Ad1" >
+                <br>
+                <label for="Ad2">Address 2</label>
+                <input type="text" id="Ad1" name="Ad1" >
+                <br>
+                <label for="City"><strong>City</strong></label>
+                <input type="text" id="ct" name="ct" >
+                <br>
+                <label for="State"><strong>State</strong></label>
+                    <select id="state" name="state" value="Select a State">
+                        
+                    </select>
+                <br>
+                <label for="ZCode"><strong>Zip Code</strong></label>
+                <input type="text" id="Ad1" name="Ad1" >
+                <br>
+                <label for="country"><strong>Country</strong><span style="color: red">*</span> </label>     
+                    <select id="country" name="country" class="form-control" value="Select a Country">
+                        <option value="Afg">Afghanistan</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="Ind">India</option>
+                        <option value="Pak">Pakistan</option>
+                        <option value="Nep">Nepal</option>
+                        <option value="SL">SriLanka</option>
+                    </select>
+                <br/>
+                <label for="name"><strong>Phone</strong></label>
+                <input type="text" id="num" name="num" >
+                <br>
+                <label for="name"><strong>Fax</strong></label>
+                <input type="text" id="fax" name="fax" >
+                <br>
+                <label for="name"><strong>Email</strong></label>
+                <input type="text" id="mail" name="mail" >
+                <br>
+                <label for="Don"><strong>Donation Amount</strong> </label>
+                <input type="radio" id="amount1" name="amount1" value="0">
+                <label for="amount1">None</label>
+                <input type="radio" id="amount2" name="amount2" value="50">
+                <label for="amount2">$50</label>
+                <input type="radio" id="amount3" name="amount3" value="75">
+                <label for="amount3">$75</label>
+                <input type="radio" id="amount4" name="amount4" value="100">
+                <label for="amount4">$100</label>
+                <input type="radio" id="amount5" name="amount5" value="250">
+                <label for="amount">$250</label>
+                    <br>
+                <label for="Other">(Check a button or typein your amount))</label><span>Other Amount $</span> 
+                <input type="number" id="Other" name="Other" >
+                <br/>
+            
+                <label for="Other"><strong>Recurring Donation</strong><br>(Check if yes)</label>
+                <input type="checkbox" id="RD" name="RD" value="RDamount"><span>I am interested in giving on a regular basis.</span><br>
+                <span>Monthly Credit Card $</span><input type="text" id="creditamount"><span> For </span> <input type="text" id="mon">
+
+            </form>    
+
+        </p>
+        <p>
+            <h3 style="color: red;">Honorarium Memorial Donation Information</h3>
+            <form>
+                <label for="name"><strong>I would Like to make this donation</strong></label>
+                <input type="radio" id="hon" name="hon"><span>To Honor</span><br>
+                <input type="radio" id="mem" name="mem"><span>In Memory of</span>
+                <br>
+                <label for="mname"><strong>Name</strong></label>
+                <input type="text" name="mname">
+                <br>
+                <label for="mname"><strong>Achnowledge Donation to</strong></label>
+                <input type="text" name="acdon">
+                <br>
+                <label for="mname"><strong>Address</strong></label>
+                <input type="text" name="madd">
+                <br>
+                <label for="mname"><strong>City</strong></label>
+                <input type="text" name="mct">
+                <br>
+                <label for="mstate"><strong>State</strong></label>
+                    <select id="mstate" name="mstate" value="Select a State">
+                        
+                    </select>
+                <br>
+                <label for="mzip"><strong>Zip</strong></label>
+                <input type="text" id="Zip" name="Zip">
+                <br>
+            </form>                    
+        </p>
+        <p>
+            <h3 style="color: red;">Additional Information</h3>
+            
+        </p>
+
+    </body>
+
+</html>
