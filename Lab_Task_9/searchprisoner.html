@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Prisoner Search</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+table, th, td {
+  border:1px solid black;
+  background: grey;
+}
+footer {
+   position: absolute;
+        bottom: 0;
+        width: 72%;
+        color: #ffffff;
+        text-align: center;
+        padding: 5px 0;
+      background-color: DarkSalmon;
+      color: white;}
+</style>
+
+
+	<script>  
+		function validateform(){  
+		var name=document.PrisonSr.name.value;  
+		var age=document.PrisonSr.age.value;  
+		  
+		if (name==null || name==""){  
+		  alert("Name can't be blank");  
+		  return false;  
+		}else if(age.length>3){  
+		  alert("Age must not more than 3 number");  
+		  return false;  
+		  }  
+		}
+		function checkEmpty() {
+		  	if (document.PrisonSr.name.value = "") {
+		  		alert("Name can't be blank");
+		        return false;  
+		  	}
+		  }  
+		function checkName() {
+			if (document.getElementById("name").value == "") {
+			  	document.getElementById("nameErr").innerHTML = "Name can't be blank";
+			  	document.getElementById("name").style.borderColor = "red";
+			}
+			
+        }
+        function checkage(){
+        	if (document.getElementById("age").value == "") {
+			  	document.getElementById("passErr").innerHTML = "Age can't be blank";
+			  	document.getElementById("age").style.borderColor = "red";
+			}
+        }
+        function checkclass(){
+            if(document.getElementById("class").value ==""){
+                alert("Class is not specified. Multiple result will be displayed.");
+                return true;
+            }
+        }
+</script>  
+</head>
+<body>
+    <form name="myform" method="post" action="" onsubmit="validateform()" >  
+        Search Prisoner: <input type="text" name="PrisonSr" id="name" onblur="checkName()">
+        <p id="nameErr"></p>
+        <br/>  
+        Age: <input type="text" id="age" name="age" onblur="checkage()">
+        <p id="passErr"></p>
+        <br/>  
+        Class Type: <input type="text" id="class" name="class" onblur="checkclass()" >
+
+        <input type="submit" value="register">  
+        </form>
+</body>
+</html>
